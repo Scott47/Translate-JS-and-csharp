@@ -12,6 +12,7 @@ List<string> names = new List<string> {
 // Print some output to the terminal (aka. "Console");
 Console.WriteLine("All Place Names");
 
+
 // Iterate over each "name" in the "names" list
 foreach (string name in names)
 {
