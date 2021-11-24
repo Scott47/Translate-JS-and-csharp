@@ -9,9 +9,10 @@ namespace csharp
         static void Main(string[] args)
         {
             string text = getText();
-            Regex regex = new Regex(@"/[^a-zA-Z ]/g");
-            string amendedText = regex.Replace(text, "");
+            Regex rgx = new Regex(@"[^a-zA-Z ]");
+            string amendedText = rgx.Replace(text, "");
             List<string> words = new List<string>(amendedText.Split(" "));
+
             Dictionary<string, int> freqCounts = new Dictionary<string, int>();
 
             foreach (string word in words)
